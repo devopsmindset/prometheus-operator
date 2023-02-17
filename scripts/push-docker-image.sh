@@ -20,9 +20,9 @@ CPU_ARCHS="amd64 arm64 arm ppc64le s390x"
 REGISTRIES="${REGISTRIES:-"docker.io"}"
 
 # IMAGE_OPERATOR, IMAGER_RELOADER and IMAGE_WEBHOOK need to be exported to be used by `make`
-export IMAGE_OPERATOR="${IMAGE_OPERATOR:-"prometheus-operator/prometheus-operator"}"
-export IMAGE_RELOADER="${IMAGE_RELOADER:-"prometheus-operator/prometheus-config-reloader"}"
-export IMAGE_WEBHOOK="${IMAGE_WEBHOOK:="prometheus-operator/admission-webhook"}"
+export IMAGE_OPERATOR="${IMAGE_OPERATOR:-"devopsmindset/prometheus-operator"}"
+export IMAGE_RELOADER="${IMAGE_RELOADER:-"devopsmindset/prometheus-config-reloader"}"
+export IMAGE_WEBHOOK="${IMAGE_WEBHOOK:="devopsmindset/admission-webhook"}"
 # Figure out if current commit is tagged
 export TAG="${GITHUB_REF##*/}"
 
