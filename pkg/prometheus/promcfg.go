@@ -1453,7 +1453,7 @@ func (cg *ConfigGenerator) generateK8SSDConfig(
 			{
 				{
 					Key:   "role",
-					Value: "ingress",
+					Value: role,
 				},
 				{
 					Key:   "label",
