@@ -1449,11 +1449,21 @@ func (cg *ConfigGenerator) generateK8SSDConfig(
 	
 	k8sSDConfig = append(k8sSDConfig, yaml.MapItem{
 		Key: "selectors",
-		Value: [1]yaml.MapSlice{
+		Value: [2]yaml.MapSlice{
 			{
 				{
 					Key:   "role",
 					Value: role,
+				},
+				{
+					Key:   "label",
+					Value: "metrics",
+				},
+			},
+			{
+				{
+					Key:   "role",
+					Value: "pod",
 				},
 				{
 					Key:   "label",
